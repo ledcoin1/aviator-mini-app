@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(#0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+}
+
+.game-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.game-area {
+  position: relative;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  background: #111;
+  overflow: hidden;
+}
+
+#plane {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 50px;
+  transition: transform 0.1s linear;
+}
+
+#coefficient {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.controls {
+  margin: 10px 0;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+button:disabled {
+  background: #777;
+}
+
+.history {
+  text-align: left;
+  margin-top: 20px;
+}

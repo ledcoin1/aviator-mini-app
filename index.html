@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aviator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Aviator</h1>
+    <div class="game-area">
+      <img id="plane" src="assets/plane.png" />
+      <div id="coefficient">1.00x</div>
+    </div>
+
+    <div class="controls">
+      <div>
+        💰 Баланс: <span id="balance">1000</span> TON
+      </div>
+      <input id="bet" type="number" placeholder="Ставка" min="1" />
+      <button id="startBtn">СТАРТ</button>
+      <button id="cashOutBtn" disabled>ЗАБРАТЬ</button>
+    </div>
+
+    <div class="history">
+      <h3>История:</h3>
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="assets/background.mp3" loop></audio>
+  <audio id="beep" src="assets/beep.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
